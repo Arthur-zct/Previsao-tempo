@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  
+  
+  .App {
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    width: 60vw;
+    margin: auto;
+    margin-top: 5vh;
+    border-radius: 1em;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.336);
   }
-  to {
-    transform: rotate(360deg);
+  
+  .App h1 {
+    padding: .5em;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.337);
   }
-}
+  
+  .App form {
+    margin-top: 1em;
+    padding-bottom: 1em;
+  }
+  
+  .App form span {
+    font-size: 1.2em;
+  }
+  
+  .App form input {
+    height: 2em;
+    margin-top: 1em;
+  }
+  
+  .btn {
+    border-radius: .3em;
+    border: 1px solid black;
+    padding: .1em;
+    margin-left: .5em;
+  }
+  
+  .temp {
+    padding-top: 1.5em;
+    border-top: 2px solid rgba(0, 0, 0, 0.362);
+  }
+  
+  .Location {
+    display: flex;
+    width: 35%;
+    margin: auto;
+    font-size: 1.2em;
+  }
+  
+  .img_cont{
+    padding-top: .5em;
+    height: 2em;
+    margin-left: .5em;
+  }
+  
+  .img_cont img {
+    height: 100%;
+  }
+  
+  
+  
+  .Temp_Humidity {
+    padding-top: 1em;
+    font-size: 1.1em;
+    width: 35%;
+    margin: auto;
+    text-align: left;
+  }
+  
+  
+  .sky {
+    display: flex;
+    width: 35%;
+    margin: auto;
+    margin-top: 1em;
+    font-size: 1.1em;
+    padding-bottom: 1em;
+  }
+  
+  .sky_ico {
+    height: 100%;
+  }
+  
+  .sky p {
+    padding-top: .9em;
+  }
+  
