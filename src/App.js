@@ -11,7 +11,7 @@ function App() {
     if(inputRef.current.value !== "") {
       fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ inputRef.current.value }&units=metric&appid=d2803d4982fc37954de5a241d6db1fb1&lang=pt_br`).then(res => res.json()).then(resp => {
         if(resp.cod === "404"){
-          alert("deu merda")
+          alert("erro")
         } else {
           setTempo(resp)
         }
@@ -45,7 +45,7 @@ function App() {
           
           <div className='sky'>
             <div className='sky_ico'>
-              <img src={`http://openweathermap.org/img/wn/${Tempo.weather[0].icon}.png`} />
+              <img src={`http://openweathermap.org/img/wn/${Tempo.weather[0].icon}.png`} alt='desenho da condição atual do céu' />
             </div>
             <p>{Tempo.weather[0].description}.</p>
           </div>
