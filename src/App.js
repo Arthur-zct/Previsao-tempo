@@ -8,9 +8,9 @@ function App() {
   
   function NewCity(e) {
     e.preventDefault();
-    if(inputRef.current.value != "") {
+    if(inputRef.current.value !== "") {
       fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ inputRef.current.value }&units=metric&appid=d2803d4982fc37954de5a241d6db1fb1&lang=pt_br`).then(res => res.json()).then(resp => {
-        if(resp.cod == "404"){
+        if(resp.cod === "404"){
           alert("deu merda")
         } else {
           setTempo(resp)
