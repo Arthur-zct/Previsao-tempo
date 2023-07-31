@@ -41,12 +41,12 @@ function App() {
           
           <div className='Temp_Humidity'>
             <div>
-              <div className='Temp_r'></div>
               <p>Temperatura: {Tempo.main.temp}°</p>
+              <div className='Temp_r'></div>
             </div>
             <div>
-              <div className='Umi_r'></div>
               <p>Umidade: {Tempo.main.humidity}%</p>
+              <div className='Umi_r'></div>
             </div>
           </div>
           

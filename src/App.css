@@ -31,18 +31,27 @@
   
   .App form span {
     font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(59, 65, 65);
   }
   
-  .App form input {
+  .App form label > input {
     height: 2em;
     margin-top: 1em;
+    border-radius: .3em;
+    border: 1.5px solid black;
+    padding-left: 4px;
   }
   
   .btn {
-    border-radius: .3em;
-    border: 1px solid black;
-    padding: .1em;
+    border-radius: .5em;
+    height: 2em;
+    border: 1px solid rgba(0, 0, 0, 0.693);
+    padding: .3em;
     margin-left: .5em;
+    background-color: #083b68d7;
+    color: rgba(255, 255, 255, 0.966);
+    font-weight: bolder;
   }
   
   .temp {
@@ -52,9 +61,13 @@
   
   .Location {
     display: flex;
-    width: 30%;
+    width: 35%;
     margin: auto;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    color: rgb(45, 49, 49);
+  }
+  .Location h2 {
+    margin: auto;
   }
   
   .img_cont{
@@ -74,34 +87,35 @@
     font-size: 1.2em;
     font-weight: bolder;
     color: rgb(59, 65, 65);
-    width: 32%;
+    width: 35%;
     margin: auto;
-    text-align: left;
   }
   .Temp_Humidity > div {
-    display: flex;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 1em;
   }
   
   .Temp_r {
-    width: 0.4em;
+    width: 100%;
     border-radius: 0.3em;
     background-color: rgb(9, 150, 9);
-    height: 1em;
+    height: 0.3em;
     margin-top: 0.2em;
     margin-right: 0.2em;
   }
   .Umi_r {
-    width: 0.4em;
+    width: 100%;
     border-radius: 0.3em;
     background-color: aqua;
-    height: 1em;
+    height: 0.3em;
     margin-top: 0.2em;
     margin-right: 0.2em;
   }
   
   .sky {
     display: flex;
-    width: 30%;
+    width: 15%;
     margin: auto;
     margin-top: 1em;
     font-size: 1.1em;
@@ -118,4 +132,54 @@
     font-size: 1.1em;
     color: rgb(59, 65, 65);
   }
+
+
+
+@media (max-width: 1150px) {
+  .sky {
+    width: 30%;
+  }
+  .Temp_Humidity {
+    width: 40%;
+  }
+  .Location {
+    width: 40%;
+  }
+}
+@media (max-width: 920px) {
+  .sky {
+    width: 35%;
+  }
+  .Temp_Humidity {
+    width: 50%;
+  }
+  .Location {
+    width: 50%;
+  }
+  .App {
+    width: 90vw;
+  }
+}
+@media (max-width: 730px) {
+  .sky {
+    width: 40%;
+  }
+  .Temp_Humidity {
+    width: 60%;
+  }
+  .Location {
+    width: 60%;
+  }
+}
+@media (max-width: 300px) {
+  .sky {
+    width: 50%;
+  }
+  .Temp_Humidity {
+    width: 100%;
+  }
+  .Location {
+    width: 70%;
+  }
+}
   
