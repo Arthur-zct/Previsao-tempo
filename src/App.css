@@ -4,7 +4,9 @@
     box-sizing: border-box;
   }
   
-  
+  body {
+    background-color: #083c68;
+  }
   
   .App {
     text-align: center;
@@ -50,7 +52,7 @@
   
   .Location {
     display: flex;
-    width: 35%;
+    width: 30%;
     margin: auto;
     font-size: 1.2em;
   }
@@ -69,16 +71,37 @@
   
   .Temp_Humidity {
     padding-top: 1em;
-    font-size: 1.1em;
-    width: 35%;
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: rgb(59, 65, 65);
+    width: 32%;
     margin: auto;
     text-align: left;
   }
+  .Temp_Humidity > div {
+    display: flex;
+  }
   
+  .Temp_r {
+    width: 0.4em;
+    border-radius: 0.3em;
+    background-color: rgb(9, 150, 9);
+    height: 1em;
+    margin-top: 0.2em;
+    margin-right: 0.2em;
+  }
+  .Umi_r {
+    width: 0.4em;
+    border-radius: 0.3em;
+    background-color: aqua;
+    height: 1em;
+    margin-top: 0.2em;
+    margin-right: 0.2em;
+  }
   
   .sky {
     display: flex;
-    width: 35%;
+    width: 30%;
     margin: auto;
     margin-top: 1em;
     font-size: 1.1em;
@@ -90,6 +113,9 @@
   }
   
   .sky p {
-    padding-top: .9em;
+    padding-top: .6em;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: rgb(59, 65, 65);
   }
   

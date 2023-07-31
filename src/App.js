@@ -14,6 +14,7 @@ function App() {
           alert("erro")
         } else {
           setTempo(resp)
+          console.log(resp)
         }
       })
     }
@@ -39,8 +40,14 @@ function App() {
           </div>
           
           <div className='Temp_Humidity'>
-            <p>Temperatura: {Tempo.main.temp} Graus.</p>
-            <p>Umidade: {Tempo.main.humidity}%</p>
+            <div>
+              <div className='Temp_r'></div>
+              <p>Temperatura: {Tempo.main.temp}°</p>
+            </div>
+            <div>
+              <div className='Umi_r'></div>
+              <p>Umidade: {Tempo.main.humidity}%</p>
+            </div>
           </div>
           
           <div className='sky'>
