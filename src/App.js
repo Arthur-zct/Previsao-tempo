@@ -5,6 +5,7 @@ function App() {
 
   const [Tempo, setTempo] = useState()
   const inputRef = useRef();
+  const [Previsao, setPrevisao] = useState([]);
   
   function NewCity(e) {
     e.preventDefault();
@@ -14,9 +15,19 @@ function App() {
           alert("erro")
         } else {
           setTempo(resp)
-          console.log(resp)
+          //console.log(resp)
         }
       })
+      fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${inputRef.current.value}&units=metric&appid=d2803d4982fc37954de5a241d6db1fb1&lang=pt_br`)
+      .then(res => res.json())
+      .then(data => {
+        // Filtrar para pegar 1 previsão por dia, por exemplo ao meio-dia
+        
+        const previsaoDiaria = data.list.filter(item => item.dt_txt.includes("12:00:00"));
+        setPrevisao(previsaoDiaria);
+        console.log(previsaoDiaria)
+      });
+      
     }
   }
 
@@ -59,6 +70,7 @@ function App() {
 
         </section>
       )}
+      
       
       
     </main>
