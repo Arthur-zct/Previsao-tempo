@@ -1,2 +1,25 @@
+.PrevisaoSeguinteCont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.PrevisaoSeguinteDiv {
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    padding: 1px;
+}
+
+.Location {
+    display: flex;
+    width: 35%;
+    margin: auto;
+    font-size: 1.3em;
+    color: rgb(45, 49, 49);
+}
+
+.sky_ico {
+    height: 100%;
+}
 
