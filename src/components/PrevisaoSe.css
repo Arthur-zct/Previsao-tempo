@@ -5,18 +5,23 @@
 }
 
 .PrevisaoSeguinteDiv {
-    border-color: black;
+    min-width: 20%;
+   /* border-color: black;
     border-width: 2px;
-    border-style: solid;
-    padding: 1px;
+    border-style: solid; */
+    padding: 2px;
+    margin-bottom: 4px;
 }
 
 .Location {
-    display: flex;
-    width: 35%;
-    margin: auto;
+    width: 100%;
     font-size: 1.3em;
     color: rgb(45, 49, 49);
+    text-align: center;
+}
+
+.titleh3 {
+    margin: auto;
 }
 
 .sky_ico {
