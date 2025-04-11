@@ -53,7 +53,7 @@ function App() {
           
           <div className='Temp_Humidity'>
             <div>
-              <p>Temperatura: {Tempo.main.temp}°</p>
+              <p>Temperatura: {Math.round(Tempo.main.temp)}°</p>
               <div className='Temp_r'></div>
             </div>
             <div>

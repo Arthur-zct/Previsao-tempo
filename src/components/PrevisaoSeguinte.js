@@ -10,7 +10,7 @@ const PrevisaoSeguinte = ({ Previsao }) => {
     return (
         <div className='PrevisaoSeguinteDiv'>
             <div>
-                <h4> {diaSemana} </h4>
+                <h4> {diaSemana}. </h4>
             </div>
             <div className='Location'>
                 <h3 className='titleh3'>{Math.round(Previsao.main.temp)}°</h3>
