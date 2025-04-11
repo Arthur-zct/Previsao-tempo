@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import './App.css';
+import PrevisaoSeguinte from './components/PrevisaoSeguinte';
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
       fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${inputRef.current.value}&units=metric&appid=d2803d4982fc37954de5a241d6db1fb1&lang=pt_br`)
       .then(res => res.json())
       .then(data => {
-        // Filtrar para pegar 1 previsão por dia, por exemplo ao meio-dia
+        // Filtrar para pegar 1 previsão por dia, ao meio-dia
         
         const previsaoDiaria = data.list.filter(item => item.dt_txt.includes("12:00:00"));
         setPrevisao(previsaoDiaria);
@@ -71,7 +72,15 @@ function App() {
         </section>
       )}
       
-      
+      {Previsao.length > 0 && (
+        <section className='PrevisaoSeguinteCont'>
+          <PrevisaoSeguinte Previsao={Previsao[0]} />
+          <PrevisaoSeguinte Previsao={Previsao[1]} />
+          <PrevisaoSeguinte Previsao={Previsao[2]} />
+          <PrevisaoSeguinte Previsao={Previsao[3]} />
+          <PrevisaoSeguinte Previsao={Previsao[4]} />
+        </section>
+      )}
       
     </main>
   );
