@@ -13,7 +13,7 @@ const PrevisaoSeguinte = ({ Previsao }) => {
                 <h4> {diaSemana}. </h4>
             </div>
             <div className='Location'>
-                <h3 className='titleh3'>{Math.round(Previsao.main.temp)}°</h3>
+                <h3 className='titleh3' title='Temperatura estimada para as 12 horas' >{Math.round(Previsao.main.temp)}°</h3>
             </div>
 
             <div className='image'>
