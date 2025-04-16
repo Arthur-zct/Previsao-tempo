@@ -1,14 +1,7 @@
-.PrevisaoSeguinteCont {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+
 
 .PrevisaoSeguinteDiv {
     min-width: 20%;
-   /* border-color: black;
-    border-width: 2px;
-    border-style: solid; */
     padding: 2px;
     margin-bottom: 4px;
 }
